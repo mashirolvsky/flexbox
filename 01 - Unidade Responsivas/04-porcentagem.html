@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comportamento da porcentagem</title>
+</head>
+    <style>
+        .externa
+        {
+            background-color: aqua;
+            position: relative;
+            height: 500px;
+            width: 500px;
+
+        }
+
+        .interna{
+            background-color: brown;
+            height: 100px;
+            width: 100%;
+            position: absolute;
+        }
+
+        p{
+            padding: 2000px;
+        }
+    </style>
+
+<body>
+ 
+        <div class="externa">
+            <div class="interna">
+
+            </div>
+        </div>
+
+        <p></p>
+</body>
+</html>

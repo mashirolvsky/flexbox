@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+    <style>
+        .flex-container div{
+            background-color: red;
+            font-size: 2rem;
+            margin: 5px;
+            width: 80px;
+        }
+
+        .flex-container{
+            border: 1px blue solid;
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            /*Padrão*/
+            align-items: flex-start;
+            /* align-items: flex-end; */
+            align-items: center;
+
+            /*Modificadores Secundários*/
+            /* align-items: baseline; */
+            /* align-items: stretch; */
+        }
+
+        .flex-container .bg-content{
+            font-size: 3em;
+            align-self: flex-start;
+            flex-grow: 1;
+        }
+
+        .flex-container .sm-content{
+            font-size: 1em;
+            /* align-self: flex-end; */
+        }
+        
+        .grow{
+            flex-grow: 1;
+        }
+    </style>
+
+	<body>
+		<section class="flex-container">
+			<div class="sm-content">1</div>
+			
+			<div class="sm-content grow">6</div>
+		</section>
+	</body>
+</html>
